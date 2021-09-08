@@ -3,7 +3,7 @@ import React from 'react'
 function Img(props) {
 
     return (
-        <div>
+        <div className='block'>
             <img src={props.img} alt={props.title}/>
             <p>{props.title}</p>
         </div>

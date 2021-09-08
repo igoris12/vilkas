@@ -9,7 +9,7 @@ const trains = [
     { img: 'img/08.jpg', desc: 'Funny blue train on bridge.' },
     { img: 'img/09.jpg', desc: 'Still working in Alaska mine.' },
     { img: 'img/10.jpg', desc: 'Water and train- both green.' },
-    { img: 'img/011.jpg', desc: 'Rainy day in nowhere.' },
+    { img: 'img/11.jpg', desc: 'Rainy day in nowhere.' },
     { img: 'img/12.jpg', desc: 'Star train waiting for passengers.' },
 ];
 export default trains;

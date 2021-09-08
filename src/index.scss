@@ -1,26 +1,55 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-.kvadratas {
-    width: 223px;
-    height: 223px;
-    background-color: pink;
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  grid-gap: 10px;
+  height: auto;
+  .block {
+    height: 160px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 40px;
-    span {
-        font-size: 30px;
+    position: relative;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    &.br {
-        background-color: greenyellow;
+    p {
+      position: absolute;
+      bottom: 2px;
+      color: white;
+      font-weight: bold;
     }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
