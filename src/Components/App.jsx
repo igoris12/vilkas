@@ -1,11 +1,11 @@
-import Component from './Component';
-import Stalas from './Stalas';
+import Kvadratas from './Kvadratas';
 
-function App(props) {
-return (<>
-    <Component per={props.per} name={'Labas'} surname={'Antanai'}></Component>
-    <Stalas per={props.per} name={'Labas'} surname={'Antanai'}></Stalas>
+const data = ['Rudasis', 'Juodasis', 'Brigadininkas'];
+
+function App() {
+    return (<>
+        {data.map((b, i) => <Kvadratas key={i} bebras={b} />)}
     </>);
-}
-
+    }
+    
 export default App;
